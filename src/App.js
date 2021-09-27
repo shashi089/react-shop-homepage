@@ -100,12 +100,12 @@ class App extends React.Component {
   // function for count  (addcart and remove cart action)
   addcart = (event) => {
     if (event) {
-      this.setState((count) => ({
-        count: count + 1,
+      this.setState(() => ({
+        count: this.state.count + 1,
       }));
     } else {
-      this.setState((count) => ({
-        count: count - 1,
+      this.setState(() => ({
+        count: this.state.count - 1,
       }));
     }
   };
