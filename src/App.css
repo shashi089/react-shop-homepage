@@ -1,3 +1,6 @@
+*{
+  scroll-behavior: smooth;
+}
 .card-content {
   height: auto;
   padding: 5% 7%;

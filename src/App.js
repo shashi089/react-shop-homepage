@@ -1,4 +1,5 @@
 import "./App.css";
+
 import React from "react";
 import Footer from "./components/Footer";
 import Card from "./components/Card";
@@ -103,12 +104,22 @@ class App extends React.Component {
       this.setState(() => ({
         count: this.state.count + 1,
       }));
+      this.scrollTop();
     } else {
       this.setState(() => ({
         count: this.state.count - 1,
       }));
+      this.scrollTop();
     }
   };
+
+  // function to scrollup after add/remove cart
+  scrollTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   render() {
     return (
       <>
