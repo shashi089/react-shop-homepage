@@ -1,0 +1,11 @@
+.card-content {
+  height: auto;
+  padding: 5% 7%;
+  box-sizing: border-box;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .card-content {
+    gap: 20px;
+  }
+}

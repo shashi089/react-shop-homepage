@@ -1,0 +1,41 @@
+.card {
+  width: 250px;
+  height: 400px;
+}
+.card-img-top {
+  height: 150px;
+  width: 250px;
+  object-fit: cover;
+}
+.card-img-overlay {
+  padding: 5px 40px 0 0;
+}
+.rating {
+  color: #f1dc18;
+  font-size: 1rem;
+}
+.card-footer {
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.price span {
+  text-decoration: line-through;
+}
+h5 {
+  font-weight: 900;
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 200px;
+    height: 350px;
+  }
+  .card-img-top {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .rating {
+    font-size: 0.85rem;
+  }
+}
