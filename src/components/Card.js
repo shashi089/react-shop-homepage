@@ -24,10 +24,17 @@ class Card extends React.Component {
   render() {
     return (
       <>
-        <div className="card position-realtive text-center">
+        <div
+          className="card position-realtive text-center"
+          key={this.props.key}
+        >
           {/* cart-image*/}
           <div>
-            <img className="card-img-top" src={this.props.image} alt="items" />
+            <img
+              className="card-img-top"
+              src={this.props.image}
+              alt="productimage"
+            />
           </div>
 
           <div className="card-img-overlay text-right">
